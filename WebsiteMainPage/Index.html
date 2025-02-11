@@ -14,21 +14,35 @@
 
 <body>
     <!-- Header section  -->
-    <div class="headersection">
-        <a href="#"><img src="webpageimages/Mainpagelogo.png" id="mainlogo"></a>
-        <div class="headerMenu">
-            <ul>
-                <li><a href="Index.html">Home</a> </li>
-                <li> <a href="Mens.html">Mens</a></li>
-                <li><a href="Womens.html">Womens</a></li>
-                <li><a href="Kids.html">Kids</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #fbfdfe;"></i></a></li>
 
-            </ul>
-        </div>
-    </div>
+    <!-- Header Section -->
+<div class="headersection">
+    <a href="Index.html">
+        <img src="webpageimages/Mainpagelogo.png" id="mainlogo" alt="RevaTrends Logo">
+    </a>
+    <nav class="headerMenu">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Mens.html">Mens</a></li>
+            <li><a href="Womens.html">Womens</a></li>
+            <li><a href="Kids.html">Kids</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li id="carts">
+                <a href="Carts.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
 
     <!-- Herosection main page -->
 
@@ -100,16 +114,466 @@
         </div>
     </div>
 
+
+
 <!-- Body content -->
+<div class="bodysection"> 
+    <div class="mensection">
+        <div class="menstext">
+            <h2>Men's Latest</h2>
+        <p>Men's Fashion - Timeless & Trendy  At RevaTrends, we bring you a collection that blends modern style with classic elegance </p>
 
-<div> hello</div>
+        </div>
+        
+        <div class="slider-container">
+
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="mens-slider">
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/whiteshirt.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/greyshirt.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/checksblazer.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/BlueB.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/Blacktshirt.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <!-- Duplicate items for infinite looping -->
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/Blackpant.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mens.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div> 
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/greyshirt.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/checksblazer.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/BlueB.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/mensclothes/Blacktshirt.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- womens clothes -->
+<!-- reusing all elements with same class names-->
+
+<div class="bodysection"> 
+    <div class="mensection">
+        <div class="menstext">
+            <h2>Women's Latest</h2>
+        <p>Women's Clothing - Elevate Your Style
+            At RevaTrends, we bring you the latest in women’s fashion, blending elegance, comfort, and trendsetting styles </p>
+
+        </div>
+        
+        <div class="slider-container">
+
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="mens-slider">
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/blackblazerset.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/cloth10.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/blacksuit.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/cloth5.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/cloth7.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <!-- Duplicate items for infinite looping -->
+
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/cloth10.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/blacksuit.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/cloth5.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/womens/cloth7.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<!-- offer banner -->
+
+<div class="offerbanner"> 
+    <img src="webpageimages/Web_Photo_Editor.jpg"> 
+</div>
+
+
+<!-- kids section -->
+<div class="bodysection"> 
+    <div class="mensection">
+        <div class="menstext">
+            <h2>Kid's Latest</h2>
+        <p>Kids' Fashion - Cute & Trendy
+            Little ones deserve fashion too! RevaTrends Kids offers a fun, comfortable, and trendy clothing collection for all ages</p>
+
+        </div>
+        
+        <div class="slider-container">
+
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="mens-slider">
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy 2.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy 3.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy 4.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy 5.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <!-- Duplicate items for infinite looping -->
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy 4.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy 5.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+                <div class="mensblock1">
+                    <img src="webpageimages/Kids/image copy.png">
+                    <div class="mensblock1text"> 
+                        <h4>Blazers Spring</h4>
+                        <p>₹ 12,000</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<!-- banner showing collections -->
+ <div class="bannersection">
+
+    <div class="banner1">
+        <img src="webpageimages/banner/b17.jpg">
+        <div class="bannertext">
+            <p> Crazy deals </p>
+        <h2>Buy 1 Get 1 Free</h2>
+        <p>The best classic dress is on sale at RevaTrends</p>
+        <button id="herobtn"> Discover More</button>
+        </div>
+        
+
+    </div>
+    <div class="banner1">
+        <img src="webpageimages/banner/b10.jpg">
+        <div class="bannertext">
+            <p> Spring / Summer </p>
+        <h2>Upcoming season</h2>
+        <p>The best collection arrived on sale at RevaTrends</p>
+        <button id="herobtn"> New Collections</button>
+        </div>
+        
+
+    </div>
+ </div>
+
+
+
+
+
+</div>   
+
+
+
+
+</div>
+
+<!-- Newsletter Section -->
+<div class="newsletters"> 
+    <img src="webpageimages/banner/b2.jpg" alt="Newsletter Banner">
+    <div class="newsletterstext">
+        <h1>Sign Up for Special Offers</h1>
+        <p>Get E-mail updates about the latest trends and special offers.</p>
+        <div class="newsletter-input">
+            <input type="email" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+    </div>
+</div>
+
+<!-- About RevaTrends Section -->
+<div class="aboutrev">
+    <div class="about1">
+        <h1>About RevaTrends - Redefining Fashion</h1>
+        <p>Welcome to RevaTrends, your ultimate destination for modern, stylish, and trendsetting fashion. We blend elegance with comfort, offering curated collections for men, women, and kids. Whether you're looking for everyday essentials, statement pieces, or ethnic wear, we have something for everyone.</p>
+        <h4>Men’s Fashion – Women’s Fashion – Kids’ Collection – Accessories & Footwear</h4>
+
+        <h2>Why Choose RevaTrends?</h2>
+        <ul>
+            <li>✨ <strong>Quality & Comfort</strong> – Premium fabrics for a luxurious feel.</li>
+            <li>✨ <strong>Trendsetting Styles</strong> – Stay ahead with the latest fashion trends.</li>
+            <li>✨ <strong>Seamless Shopping Experience</strong> – Easy browsing, secure payments, and fast delivery.</li>
+        </ul>
+    </div>
+    <div class="about2">
+        <img src="webpageimages/banner/newlogo-removebg-preview.png" alt="RevaTrends Logo">
+    </div>
+</div>
+
+
+
+<!-- FOOTER -->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About RevaTrends -->
+        <div class="footer-about">
+            <img src="webpageimages/Mainpagelogo.png" alt="RevaTrends Logo" class="footer-logo">
+            <p>RevaTrends is your go-to destination for the latest fashion trends. We bring you quality, style, and elegance, all in one place.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Mens.html">Men</a></li>
+                <li><a href="Womens.html">Women</a></li>
+                <li><a href="Kids.html">Kids</a></li>
+                <li><a href="Accessories.html">Accessories</a></li>
+                <li><a href="Sale.html">Sale</a></li>
+                <li><a href="GiftCards.html">Gift Cards</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-links">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li><a href="Returns.html">Returns & Exchanges</a></li>
+                <li><a href="Shipping.html">Shipping Information</a></li>
+                <li><a href="TrackOrder.html">Track Your Order</a></li>
+                <li><a href="Support.html">Customer Support</a></li>
+            </ul>
+        </div>
+
+        <!-- Company Info -->
+        <div class="footer-links">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="Terms.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Store Locations -->
+        <div class="footer-links">
+            <h3>Store Locations</h3>
+            <ul>
+                <li>📍 New York, USA</li>
+                <li>📍 London, UK</li>
+                <li>📍 Sydney, Australia</li>
+                <li>📍 Mumbai, India</li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest fashion updates, exclusive offers, and trend alerts.</p>
+            <input type="email" placeholder="Enter your email" class="newsletter-input">
+            <button class="newsletter-btn">Subscribe</button>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Payment Methods -->
+    <div class="footer-payment">
+        <h3>We Accept</h3>
+        <div class="payment-icons">
+            <img src="webpageimages/visa.png" alt="Visa">
+            <img src="webpageimages/mastercard.png" alt="MasterCard">
+            <img src="webpageimages/paypal.png" alt="PayPal">
+            <img src="webpageimages/amex.png" alt="Amex">
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 RevaTrends. All Rights Reserved. | Designed with ❤️</p>
+    </div>
+</footer>
 
 
 
 
 
 
-</div>    
+
+
+<script src="script.js"></script>
 
 </body>
 

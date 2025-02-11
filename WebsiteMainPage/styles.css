@@ -6,47 +6,91 @@
 
 /* header section */
 
-.headersection{
+/* Header Section */
+.headersection {
     background-color: #91abbb;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5px;
-    padding-bottom: 5px;
+    padding: 10px 40px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#mainlogo{
-    width: 350px;
+/* Logo */
+#mainlogo {
+    max-width: 350px;
     height: auto;
 }
 
-.headerMenu ul{
+
+/* Navigation Menu */
+.headerMenu ul {
     display: flex;
-    gap: 55px;
+    gap: 40px;
     list-style: none;
-    padding: 30px;
-    font-size: 19px;
-   
+    padding: 0;
+    margin: 0;
 }
 
-.fa-cart-shopping{
-    font-size: 30px;
+.headerMenu ul li {
+    display: inline-block;
 }
 
-
+/* Menu Links */
 .headerMenu ul li a {
-    color:rgb(107, 103, 103); 
-    text-decoration: none; 
+    color: rgb(107, 103, 103);
+    text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
 }
 
 .headerMenu ul li a:hover {
-    color:white; 
+    color: white;
 }
+
+/* Shopping Cart Icon */
+.fa-cart-shopping {
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Cart */
+.fa-cart-shopping:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headersection {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+     #carts{
+        visibility: hidden;
+    }
+    .headerMenu ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #mainlogo {
+        max-width: 240px;
+    }
+
+    .headerMenu ul li a {
+        font-size: 16px;
+    }
+}
+
 
 /* Herosection Start */
 
@@ -163,3 +207,393 @@
 
 
 /* Herosection END */
+
+
+/* using common styles for all the products mens womens kids ...  */
+
+/* Body section */
+
+.mensection{
+    margin-top: 60px;
+}
+
+.menstext{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menstext h2{
+    color: #91abbb;
+}
+
+.menstext p{
+    color:rgb(107, 103, 103); 
+}
+
+
+/* Slider container */
+.slider-container {
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Slider track */
+.mens-slider {
+    display: flex;
+    width: 100%; 
+    gap:10px;
+    /* animation: slide 10s linear infinite;  */
+}
+
+/* Individual blocks */
+.mensblock1 {
+    min-width: 25%; /* Each item takes up 25% of container width */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: solid #91abbb;
+    padding-bottom: 25px;
+    margin: 5px;
+    
+    
+}
+
+/* Image */
+.mensblock1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.mensblock1text {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.mensblock1text{
+    color:rgb(107, 103, 103); 
+
+}
+
+/* Keyframes for the sliding effect */
+/* @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Moves items left */
+ 
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:none; 
+    color:#91abbb; 
+    border: none;
+    cursor: pointer;
+    font-size: 45px;
+    border-radius: none; 
+   
+}    
+
+.prev{
+    left:10px;
+}
+.next{
+    right:10px;
+}
+.prev:hover, .next:hover {
+    color: black;
+}
+
+/*  */
+
+.offerbanner{
+   
+    height: auto;
+    width: 100%;
+    margin-bottom: 35px;
+    
+   
+   
+}
+
+.offerbanner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+
+/* banner */
+
+.bannersection{
+    display: flex;
+}
+
+.banner1{
+    width: 100%;
+    height: 100%;
+    margin: 50px 20px;
+    position: relative;
+
+}
+.banner1 img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+.bannertext{
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 80px;
+}
+
+.bannertext h2{
+    font-size: 35px;
+}
+
+
+
+
+
+/* about */
+
+/* Newsletter Section */
+.newsletters {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletters img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(60%);
+}
+
+.newsletterstext {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+}
+
+.newsletterstext h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletterstext p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-input input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.newsletter-input button {
+    padding: 10px 15px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-input button:hover {
+    background-color: #e6006b;
+}
+
+/* About RevaTrends Section */
+.aboutrev {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+    padding: 40px;
+}
+
+.about1 {
+    max-width: 600px;
+}
+
+.about1 h1, .about1 h2 {
+    color: #91abbb;
+    margin-bottom: 10px;
+}
+
+.about1 p, .about1 h4 {
+    color: rgb(107, 103, 103);
+}
+
+.about1 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about1 ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgb(107, 103, 103);
+}
+
+.about2 img {
+    max-width: 300px;
+}
+
+
+/* footer */
+
+/* Footer Styling */
+.footer {
+    background-color: #91abbb;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+/* About Section */
+.footer-about {
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Links Section */
+.footer-links {
+    max-width: 200px;
+    text-align: left;
+}
+
+.footer-links h3 {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f39c12;
+}
+
+/* Newsletter */
+.footer-newsletter {
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-btn {
+    margin-top: 10px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+    background-color: #d17a00;
+}
+
+/* Social Icons */
+.footer-social .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #f39c12;
+}
+
+/* Payment Methods */
+.footer-payment {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin: 5px;
+}
+
+/* Copyright */
+.footer-bottom {
+    background-color: #252424;
+    padding: 10px 0;
+    margin-top: 20px;
+    opacity: 0.5sec;
+}
