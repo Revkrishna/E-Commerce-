@@ -1,49 +1,6 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Header Section */
-.headersection {
-    background-color: #91abbb;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-#mainlogo {
-    width: 200px;
-}
-
-.headerMenu ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-.headerMenu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.headerMenu ul li a:hover {
-    color: white;
-}
 
 /* Cart Section */
-.cart-section {
+/* .cart-section {
     padding: 120px 30px;
     text-align: center;
 }
@@ -73,7 +30,7 @@ body {
 }
 
 /* Cart Total Section */
-.cart-total {
+/* .cart-total {
     margin-top: 20px;
 }
 
@@ -94,7 +51,77 @@ body {
 
 .checkout-btn:hover {
     background-color: #7896a5;
+}  */
+
+
+.productcart{
+    padding-top: 170px;
 }
+
+#cart table{
+    width: 100%;
+    border-collapse:collapse ;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70%;
+    
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+
+}
+#cart table td:nth-child(2){
+    width: 200px;
+    text-align: center;
+    
+}
+
+#cart table td:nth-child(3),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6)
+{
+    width: 120px;
+    text-align: center;
+    
+}
+
+#cart table td:nth-child(4) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+
+}
+
+#cart table thead{
+    border: 1px solid #333;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform:uppercase;
+    color:  #52626d;
+    padding: 19px 0;
+}
+
+#cart table tbody tr td{
+    color: #8395a1;
+    padding-top: 20px ;
+}
+
+
+
+
+
+
+
 
 /* Footer */
 .footer {
@@ -102,5 +129,5 @@ body {
     padding: 20px;
     background: #333;
     color: white;
-    margin-top: 50px;
+    margin-top: 450px;
 }
