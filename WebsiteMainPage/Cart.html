@@ -25,14 +25,31 @@
                 <li><a href="Kids.html">Kids</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a  href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="carts">
+                    <a href="Cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                
             </ul>
         </nav>
     </header>
 
     <!-- Cart Section -->
 
+    
+
     <section id="cart" class="productcart">
+        <div class="pt">  
+            <h2 > Your Products </h2>
+            <p > Happy Shopping with RevaTrends</p>
+         </div>
+       
 
         <table width="100%">
             <thead>
@@ -53,8 +70,6 @@
                     <td> <input type="number" value="1"></td>
                     <td>₹ 1,200 </td>
                     <td> <a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
-
-
                 </tr>
 
                 <tr>
@@ -64,8 +79,6 @@
                     <td> <input type="number" value="1"></td>
                     <td>₹ 1,000 </td>
                     <td> <a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
-
-
                 </tr>
                 <tr>
                     <td> <img src="webpageimages/Kids/image copy 6.png"></td>
@@ -74,19 +87,57 @@
                     <td> <input type="number" value="1"></td>
                     <td>₹ 2,999 </td>
                     <td> <a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
-
-
-                </tr>
-                
-
+                </tr>            
             </tbody>
-
-
-
 
         </table>
 
-    </section>
+   </section>
+   
+
+  
+        <div class="coupon-carttotal">
+
+          
+            <div class="coupon">
+                <h2> Apply Coupon</h2>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon"> 
+                    <button id="herobtn">Apply</button>
+                </div>
+
+            </div>
+            <div class="carttotal">
+                <h2> Cart Totals</h2>
+                <table>
+                    <tr>
+                        <td> Cart Subtotal</td>
+                        <td>₹ 2,999</td>
+                    </tr>
+
+                    <tr> 
+                        <td>Shipping </td>
+                        <td> Free</td>
+
+                    </tr>
+
+                    <tr> 
+                        <td> <strong> Total</strong> </td>
+                        <td>₹ 2,999 </td>
+
+                    </tr>
+
+                   
+                    
+
+                </table>
+
+                <button id="herobtn">Checkout Product</button>
+
+            </div>
+            
+        </div>
+    
 
 
 
@@ -108,6 +159,7 @@
     <footer class="footer">
         <p>&copy; 2025 RevaTrends. All rights reserved.</p>
     </footer>
+    <script src="cart.js"></script>
 
 </body>
 </html>
